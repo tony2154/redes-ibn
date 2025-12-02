@@ -1,0 +1,32 @@
+ubuntu:
+  hostname: ubuntu
+  interfaces:
+    ens3: 192.168.10.2/24
+    ens4: dhcp
+  type: host
+
+sw1:
+  hostname: sw1
+  type: switch
+  interfaces:
+    gi0/0: 192.168.10.1/24
+    gi0/2: 10.10.10.1/24
+
+csr:
+  hostname: csr1000
+  type: router
+  interfaces:
+    gi2: 10.10.10.2/24
+    gi1: 172.16.10.1/24
+
+sw2:
+  hostname: sw2
+  type: switch
+  interfaces:
+    gi0/0: 172.16.10.2/24
+    gi0/1: 192.168.20.1/24
+
+windows:
+  hostname: winpc
+  interfaces:
+    eth0: 192.168.20.2/24

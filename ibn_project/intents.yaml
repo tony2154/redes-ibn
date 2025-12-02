@@ -1,0 +1,9 @@
+- intent: "ubuntu->win"
+  action: "allow"
+  src: "192.168.10.0/24"
+  dst: "192.168.20.0/24"
+
+- intent: "csr->all"
+  action: "allow"
+  src: "10.10.10.0/24"
+  dst: "any"
